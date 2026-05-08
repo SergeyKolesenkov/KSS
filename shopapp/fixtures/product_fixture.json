@@ -1,0 +1,184 @@
+[
+  {
+    "model": "shopapp.product",
+    "pk": 1,
+    "fields": {
+      "name": "Laptop",
+      "description": "",
+      "price": "1999.00",
+      "discount": 0,
+      "created_at": "2025-11-12T15:58:43.708Z",
+      "archived": true,
+      "created_by": "0"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 2,
+    "fields": {
+      "name": "Desktop",
+      "description": "Odit dignissimos perspiciatis enim",
+      "price": "2999.00",
+      "discount": 10,
+      "created_at": "2025-11-12T15:58:43.729Z",
+      "archived": true,
+      "created_by": "0"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 3,
+    "fields": {
+      "name": "Smartphone",
+      "description": "Odit dignissimos perspiciatis enim veritatis deleniti animi, dolore provident magni necessitatibus pariatur mollitia, modi odit praesentium voluptates laudantium esse nemo in fugit vel architecto? Temporibus culpa error vel porro omnis, asperiores explicabo quisquam dolor repellendus, molestiae enim maiores nulla culpa explicabo quos iste? Quisquam ex adipisci, dignissimos hic obcaecati repellat ea ut animi inventore nulla, perspiciatis expedita ad illo cupiditate? Adipisci eaque quos aliquid, provident vitae molestias est omnis numquam natus odit quam consectetur, harum ut cupiditate reprehenderit consequuntur minima mollitia?",
+      "price": "3500.00",
+      "discount": 25,
+      "created_at": "2025-11-12T15:58:43.747Z",
+      "archived": true,
+      "created_by": "0"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 4,
+    "fields": {
+      "name": "Sergey",
+      "description": "sfhg",
+      "price": "100000.00",
+      "discount": 0,
+      "created_at": "2025-11-25T17:17:43.191Z",
+      "archived": true,
+      "created_by": "0"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 5,
+    "fields": {
+      "name": "Smartphone",
+      "description": "jhvkhk",
+      "price": "2000.00",
+      "discount": 0,
+      "created_at": "2025-11-30T22:12:22.995Z",
+      "archived": true,
+      "created_by": "0"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 6,
+    "fields": {
+      "name": "Sergey",
+      "description": "",
+      "price": "0.00",
+      "discount": 0,
+      "created_at": "2026-01-14T01:40:43.626Z",
+      "archived": true,
+      "created_by": "0"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 7,
+    "fields": {
+      "name": "Laptop",
+      "description": "thsrnn",
+      "price": "15000.00",
+      "discount": 0,
+      "created_at": "2026-01-15T20:16:31.516Z",
+      "archived": false,
+      "created_by": "0"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 8,
+    "fields": {
+      "name": "Laptop",
+      "description": "thsrnn",
+      "price": "15000.00",
+      "discount": 0,
+      "created_at": "2026-01-15T20:19:19.533Z",
+      "archived": true,
+      "created_by": "0"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 9,
+    "fields": {
+      "name": "Laptop",
+      "description": "fgaf",
+      "price": "1500.00",
+      "discount": 0,
+      "created_at": "2026-01-15T22:08:13.227Z",
+      "archived": true,
+      "created_by": "0"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 10,
+    "fields": {
+      "name": "Laptop7",
+      "description": "",
+      "price": "1000.00",
+      "discount": 0,
+      "created_at": "2026-01-15T22:45:26.987Z",
+      "archived": false,
+      "created_by": "0"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 11,
+    "fields": {
+      "name": "Sergey",
+      "description": "",
+      "price": "0.00",
+      "discount": 0,
+      "created_at": "2026-01-15T23:07:38.957Z",
+      "archived": true,
+      "created_by": "0"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 12,
+    "fields": {
+      "name": "hfjhkg",
+      "description": "hkgkhj",
+      "price": "123.00",
+      "discount": 0,
+      "created_at": "2026-01-25T20:39:20.645Z",
+      "archived": false,
+      "created_by": "admin"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 13,
+    "fields": {
+      "name": "Sergey",
+      "description": "",
+      "price": "12.00",
+      "discount": 0,
+      "created_at": "2026-01-27T20:34:48.208Z",
+      "archived": false,
+      "created_by": "admin"
+    }
+  },
+  {
+    "model": "shopapp.product",
+    "pk": 14,
+    "fields": {
+      "name": "Laptop",
+      "description": "fjfn",
+      "price": "1500.00",
+      "discount": 0,
+      "created_at": "2026-01-28T18:58:10.455Z",
+      "archived": false,
+      "created_by": "<django.db.models.query_utils.DeferredAttribute object at 0x00000230F1CB5E50>"
+    }
+  }
+]

@@ -1,0 +1,2127 @@
+2026-04-24 09:51:01,262 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-24 09:51:22,940 [INFO] shopapp.views: Rendering shop index
+2026-04-24 09:51:24,135 [INFO] shopapp.views: Rendering shop index
+2026-04-24 09:57:31,710 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\settings.py changed, reloading.
+2026-04-24 10:47:48,111 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-24 10:47:58,017 [ERROR] django.request: Internal Server Error: /ru/shop/order/create/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 178, in get
+    return super().get(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+                                   ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 72, in get_context_data
+    kwargs["form"] = self.get_form()
+                     ~~~~~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 36, in get_form
+    form_class = self.get_form_class()
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 103, in get_form_class
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Using ModelFormMixin (base class of OrderCreateView) without the 'fields' attribute is prohibited.
+2026-04-24 10:48:28,296 [WARNING] django.request: Not Found: /ru/shop/order/products
+2026-04-24 10:48:41,456 [WARNING] django.request: Forbidden (Permission denied): /ru/shop/products/create/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\auth\mixins.py", line 108, in dispatch
+    return self.handle_no_permission()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\auth\mixins.py", line 48, in handle_no_permission
+    raise PermissionDenied(self.get_permission_denied_message())
+django.core.exceptions.PermissionDenied
+2026-04-24 10:53:35,422 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-24 10:57:55,700 [ERROR] django.request: Internal Server Error: /ru/shop/order/create/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 178, in get
+    return super().get(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+                                   ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 72, in get_context_data
+    kwargs["form"] = self.get_form()
+                     ~~~~~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 36, in get_form
+    form_class = self.get_form_class()
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 103, in get_form_class
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: Using ModelFormMixin (base class of OrderCreateView) without the 'fields' attribute is prohibited.
+2026-04-24 11:02:47,768 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\views.py changed, reloading.
+2026-04-24 11:02:49,691 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-24 11:02:50,882 [ERROR] django.request: Internal Server Error: /ru/shop/order/create/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\detail.py", line 133, in get_template_names
+    names = super().get_template_names()
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 214, in get_template_names
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: TemplateResponseMixin requires either a definition of 'template_name' or an implementation of 'get_template_names()'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 178, in get
+    return super().get(request, *args, **kwargs)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 142, in get
+    return self.render_to_response(self.get_context_data())
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 202, in render_to_response
+    template=self.get_template_names(),
+             ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\detail.py", line 174, in get_template_names
+    raise ImproperlyConfigured(
+    ...<3 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: SingleObjectTemplateResponseMixin requires a definition of 'template_name', 'template_name_field', or 'model'; or an implementation of 'get_template_names()'.
+2026-04-24 11:07:05,475 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\views.py changed, reloading.
+2026-04-24 11:07:07,356 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-24 11:08:11,636 [ERROR] django.request: Internal Server Error: /ru/shop/order/create/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 123, in get_success_url
+    url = self.object.get_absolute_url()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'get_absolute_url'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ~~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 134, in form_valid
+    return super().form_valid(form)
+           ~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 63, in form_valid
+    return HttpResponseRedirect(self.get_success_url())
+                                ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 125, in get_success_url
+    raise ImproperlyConfigured(
+    ...<2 lines>...
+    )
+django.core.exceptions.ImproperlyConfigured: No URL to redirect to.  Either provide a url or define a get_absolute_url method on the Model.
+2026-04-24 11:09:45,935 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\views.py changed, reloading.
+2026-04-24 11:09:47,468 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-24 14:49:02,281 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-25 11:21:49,053 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-26 07:13:35,181 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-26 07:14:19,582 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\settings.py changed, reloading.
+2026-04-26 07:14:55,937 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-26 07:15:08,717 [WARNING] django.request: Not Found: /favicon.ico
+2026-04-26 09:56:28,315 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-26 09:56:35,457 [WARNING] django.request: Not Found: /
+2026-04-26 09:57:38,120 [ERROR] django.request: Internal Server Error: /ru/shop/products/export
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\PC\mysite\shopapp\views.py", line 194, in get
+    'pk': products.pk,
+          ^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'pk'
+2026-04-26 09:57:49,762 [WARNING] django.request: Not Found: /ru/shop/product/export
+2026-04-26 09:58:25,639 [WARNING] django.request: Not Found: /ru/ shop/ products/export
+2026-04-26 09:58:47,080 [ERROR] django.request: Internal Server Error: /ru/shop/products/export
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\PC\mysite\shopapp\views.py", line 194, in get
+    'pk': products.pk,
+          ^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'pk'
+2026-04-26 09:59:30,680 [WARNING] django.request: Not Found: /ru/shop/product/export/1
+2026-04-26 10:03:13,596 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\views.py changed, reloading.
+2026-04-26 10:03:25,543 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-26 10:03:26,680 [WARNING] django.request: Not Found: /ru/shop/product/export/
+2026-04-26 10:04:28,659 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\views.py changed, reloading.
+2026-04-26 10:04:30,841 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-26 10:04:31,992 [WARNING] django.request: Not Found: /ru/shop/product/export/
+2026-04-26 10:05:06,416 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\views.py changed, reloading.
+2026-04-26 10:05:13,425 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-26 10:05:14,518 [WARNING] django.request: Not Found: /ru/shop/product/export/
+2026-04-26 10:11:22,311 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\views.py changed, reloading.
+2026-04-26 10:11:28,960 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-26 10:12:17,700 [WARNING] django.request: Not Found: /ru/shop/product/export/
+2026-04-26 10:12:24,543 [WARNING] django.request: Not Found: /ru/shop/product/export/
+2026-04-26 10:12:47,351 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-26 10:13:01,471 [WARNING] django.request: Not Found: /ru/shop/products/export/
+2026-04-26 10:13:54,279 [WARNING] django.request: Not Found: /ru/shop/order/export/
+2026-04-26 10:14:09,091 [WARNING] django.request: Not Found: /ru/shop/order/export/
+2026-04-26 10:14:16,324 [WARNING] django.request: Not Found: /ru/shop/order/export/
+2026-04-26 10:14:52,832 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\views.py changed, reloading.
+2026-04-26 10:14:56,063 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-26 10:16:19,696 [ERROR] django.request: Internal Server Error: /ru/shop/products/export
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\PC\mysite\shopapp\views.py", line 203, in get
+    print('name:', nae)
+                   ^^^
+NameError: name 'nae' is not defined. Did you mean: 'name'?
+2026-04-26 10:16:47,583 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\views.py changed, reloading.
+2026-04-26 10:16:49,685 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-27 09:04:55,299 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-27 09:05:02,734 [WARNING] django.request: Not Found: /
+2026-04-27 11:28:43,974 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-27 11:28:52,124 [WARNING] django.request: Not Found: /
+2026-04-27 11:28:52,410 [WARNING] django.request: Not Found: /
+2026-04-27 11:29:04,686 [WARNING] django.request: Not Found: /products
+2026-04-27 12:24:11,647 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-27 12:55:46,756 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\settings.py changed, reloading.
+2026-04-27 12:55:54,587 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-27 17:02:26,514 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-27 17:03:49,694 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-27 17:10:16,097 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-27 17:13:08,893 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-27 17:13:58,244 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-27 17:14:10,985 [WARNING] django.request: Not Found: /
+2026-04-27 17:14:11,581 [WARNING] django.request: Not Found: /
+2026-04-27 17:14:13,500 [WARNING] django.request: Not Found: /favicon.ico
+2026-04-29 07:16:58,426 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-29 07:20:26,822 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-29 07:20:31,765 [WARNING] django.request: Not Found: /
+2026-04-29 07:20:33,434 [WARNING] django.request: Not Found: /favicon.ico
+2026-04-29 07:21:08,137 [WARNING] django.request: Not Found: /media/products/product_None/preview/00009398.jpg
+2026-04-29 07:21:11,280 [WARNING] django.request: Not Found: /media/products/product_None/preview/00009398.jpg
+2026-04-29 07:21:22,251 [WARNING] django.request: Not Found: /media/products/product_None/preview/00009398.jpg
+2026-04-29 07:21:28,100 [WARNING] django.request: Not Found: /media/products/product_None/preview/00009398.jpg
+2026-04-30 08:38:52,469 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 08:49:30,686 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\urls.py changed, reloading.
+2026-04-30 08:49:34,807 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 08:50:34,782 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\settings.py changed, reloading.
+2026-04-30 08:50:36,574 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 08:51:01,915 [WARNING] django.request: Not Found: /
+2026-04-30 08:51:03,024 [WARNING] django.request: Not Found: /favicon.ico
+2026-04-30 08:52:06,709 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^
+AttributeError: 'BlogSitemap' object has no attribute 'get_urls'
+2026-04-30 08:54:02,920 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\sitemap.py changed, reloading.
+2026-04-30 08:54:05,555 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 08:54:10,139 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^
+AttributeError: 'BlogSitemap' object has no attribute 'get_urls'
+2026-04-30 08:54:48,311 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ^^^^^^^^^^^^^
+AttributeError: 'BlogSitemap' object has no attribute 'get_urls'
+2026-04-30 08:54:49,191 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\sitemap.py changed, reloading.
+2026-04-30 08:54:50,706 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 08:55:20,080 [WARNING] django.request: Not Found: /
+2026-04-30 08:55:47,581 [WARNING] django.request: Not Found: /
+2026-04-30 08:59:42,833 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\sitemap.py changed, reloading.
+2026-04-30 08:59:44,731 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:01:30,100 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\sitemaps.py changed, reloading.
+2026-04-30 09:01:32,618 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:06:17,148 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\sitemap.py changed, reloading.
+2026-04-30 09:06:18,534 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:06:54,083 [WARNING] django.request: Not Found: /
+2026-04-30 09:20:33,588 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\sitemap.py changed, reloading.
+2026-04-30 09:20:35,468 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:21:14,782 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\sitemap.py changed, reloading.
+2026-04-30 09:21:16,264 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:24:36,432 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\sitemap.py changed, reloading.
+2026-04-30 09:24:38,123 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:25:03,325 [WARNING] django.request: Not Found: /
+2026-04-30 09:25:17,662 [WARNING] django.request: Not Found: /blogapp
+2026-04-30 09:25:35,827 [WARNING] django.request: Not Found: /blogapp/
+2026-04-30 09:26:36,187 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\sitemap.py changed, reloading.
+2026-04-30 09:26:38,053 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:26:46,524 [WARNING] django.request: Not Found: /blog/article/create
+2026-04-30 09:29:48,428 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\sitemap.py changed, reloading.
+2026-04-30 09:29:50,065 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:30:36,181 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\models.py changed, reloading.
+2026-04-30 09:30:37,337 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:39:28,608 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\models.py changed, reloading.
+2026-04-30 09:39:30,089 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:41:48,741 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\sitemap.py changed, reloading.
+2026-04-30 09:41:51,009 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:41:55,830 [WARNING] django.request: Not Found: /
+2026-04-30 09:46:58,892 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\sitemaps.py changed, reloading.
+2026-04-30 09:47:00,909 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:47:08,880 [WARNING] django.request: Not Found: /
+2026-04-30 09:48:25,190 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\sitemaps.py changed, reloading.
+2026-04-30 09:48:26,814 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:49:09,038 [WARNING] django.request: Not Found: /
+2026-04-30 09:51:41,704 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\settings.py changed, reloading.
+2026-04-30 09:51:43,443 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:51:45,583 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_site
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 100, in sitemap
+    req_site = get_current_site(request)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 243, in execute
+    return self._record(super().execute, sql, params)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 164, in _record
+    return method(sql, params)
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_site
+2026-04-30 09:52:24,838 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 09:52:28,952 [WARNING] django.request: Not Found: /
+2026-04-30 09:52:41,311 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_site
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 100, in sitemap
+    req_site = get_current_site(request)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 243, in execute
+    return self._record(super().execute, sql, params)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 164, in _record
+    return method(sql, params)
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_site
+2026-04-30 09:52:42,232 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_site
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 100, in sitemap
+    req_site = get_current_site(request)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 243, in execute
+    return self._record(super().execute, sql, params)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 164, in _record
+    return method(sql, params)
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_site
+2026-04-30 09:54:12,724 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such table: django_site
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 100, in sitemap
+    req_site = get_current_site(request)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\shortcuts.py", line 16, in get_current_site
+    return Site.objects.get_current(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\models.py", line 61, in get_current
+    return self._get_site_by_request(request)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sites\models.py", line 39, in _get_site_by_request
+    SITE_CACHE[host] = self.get(domain__iexact=host)
+                       ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 629, in get
+    num = len(clone)
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 366, in __len__
+    self._fetch_all()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 1949, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+        chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size
+    )
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 243, in execute
+    return self._record(super().execute, sql, params)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 164, in _record
+    return method(sql, params)
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such table: django_site
+2026-04-30 09:54:13,647 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\settings.py changed, reloading.
+2026-04-30 09:54:15,005 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:01:45,202 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:01:48,221 [WARNING] django.request: Not Found: /
+2026-04-30 15:02:31,857 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\blogapp\models.py", line 37, in get_absolute_url
+    return reverse('blogapp:article', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' not found. 'article' is not a valid view function or pattern name.
+2026-04-30 15:02:33,022 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\blogapp\models.py", line 37, in get_absolute_url
+    return reverse('blogapp:article', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' not found. 'article' is not a valid view function or pattern name.
+2026-04-30 15:04:11,206 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\models.py changed, reloading.
+2026-04-30 15:04:13,609 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:04:14,998 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\blogapp\models.py", line 37, in get_absolute_url
+    return reverse('blogapp:article_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article_list' with keyword arguments '{'pk': 1}' not found. 1 pattern(s) tried: ['blogapp/article/list\\Z']
+2026-04-30 15:07:08,245 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\blogapp\models.py", line 37, in get_absolute_url
+    return reverse('blogapp:article_list')
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article_list' with keyword arguments '{'pk': 1}' not found. 1 pattern(s) tried: ['blogapp/article/list\\Z']
+2026-04-30 15:07:08,454 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\models.py changed, reloading.
+2026-04-30 15:07:10,550 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:07:15,154 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:07:19,189 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:07:26,865 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:07:36,576 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:07:42,587 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:08:46,064 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:08:48,978 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:12:04,940 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:12:07,687 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:12:12,372 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:14:05,772 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\models.py changed, reloading.
+2026-04-30 15:14:07,607 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:14:08,964 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\blogapp\models.py", line 38, in get_absolute_url
+    return reverse('blogapp:article/list')
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article/list' not found. 'article/list' is not a valid view function or pattern name.
+2026-04-30 15:15:08,763 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\blogapp\models.py", line 38, in get_absolute_url
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article/list' not found. 'article/list' is not a valid view function or pattern name.
+2026-04-30 15:15:09,135 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\models.py changed, reloading.
+2026-04-30 15:15:10,838 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:15:15,211 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:17:36,136 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:17:36,893 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\sitemaps.py changed, reloading.
+2026-04-30 15:17:38,783 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:17:42,515 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:17:45,445 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:18:19,134 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:18:19,966 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\sitemaps.py changed, reloading.
+2026-04-30 15:18:21,488 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:18:23,111 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:18:24,407 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:18:38,018 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:18:43,787 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:19:11,070 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:19:11,406 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\sitemaps.py changed, reloading.
+2026-04-30 15:19:13,475 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:19:28,946 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list', kwargs={'pk': self.pk})
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products_list' with keyword arguments '{'pk': 2}' not found. 1 pattern(s) tried: ['ru/shop/products/\\Z']
+2026-04-30 15:19:29,765 [INFO] django.utils.autoreload: C:\PC\mysite\mysite\sitemaps.py changed, reloading.
+2026-04-30 15:19:31,021 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:20:57,256 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\models.py changed, reloading.
+2026-04-30 15:20:59,339 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:21:50,199 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\sitemap.py changed, reloading.
+2026-04-30 15:21:51,935 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:23:22,224 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\sitemap.py changed, reloading.
+2026-04-30 15:23:24,272 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:23:35,001 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\blogapp\models.py", line 37, in get_absolute_url
+    return reverse('blogapp:article')
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' not found. 'article' is not a valid view function or pattern name.
+2026-04-30 15:23:54,122 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\blogapp\models.py", line 37, in get_absolute_url
+    return reverse('blogapp:article_list')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'article' not found. 'article' is not a valid view function or pattern name.
+2026-04-30 15:23:54,325 [INFO] django.utils.autoreload: C:\PC\mysite\blogapp\models.py changed, reloading.
+2026-04-30 15:23:56,241 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:24:36,275 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\models.py changed, reloading.
+2026-04-30 15:24:38,014 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 15:24:39,289 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products-list')
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products-list' not found. 'products-list' is not a valid view function or pattern name.
+2026-04-30 15:25:08,042 [ERROR] django.request: Internal Server Error: /sitemap.xml
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 23, in inner
+    response = func(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\views.py", line 117, in sitemap
+    urls.extend(site.get_urls(page=page, site=req_site, protocol=req_protocol))
+                ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 104, in get_urls
+    return self._urls(page, protocol, domain)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 124, in _urls
+    loc = f"{protocol}://{domain}{self._location(item)}"
+                                  ~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 69, in _location
+    return self._get("location", item)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 39, in _get
+    return attr(item)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\sitemaps\__init__.py", line 79, in location
+    return item.get_absolute_url()
+           ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\shopapp\models.py", line 41, in get_absolute_url
+    return reverse('shopapp:products_list')
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'products-list' not found. 'products-list' is not a valid view function or pattern name.
+2026-04-30 15:25:08,431 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\models.py changed, reloading.
+2026-04-30 15:25:10,167 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 16:15:08,642 [ERROR] django.request: Internal Server Error: /ru/myauth/about-me/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 201, in get
+    self.object = self.get_object()
+                  ~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\myauth\views.py", line 47, in get_object
+    return self.request.user.profile if self.request.user.is_authenticated else None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+2026-04-30 16:15:22,381 [WARNING] django.request: Method Not Allowed (GET): /ru/myauth/logout/
+2026-04-30 16:15:35,788 [WARNING] django.request: Not Found: /ru/myauth/regiser
+2026-04-30 16:16:51,444 [ERROR] django.request: Internal Server Error: /ru/myauth/register/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+sqlite3.IntegrityError: UNIQUE constraint failed: auth_user.username
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 182, in post
+    return super().post(request, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 151, in post
+    return self.form_valid(form)
+           ~~~~~~~~~~~~~~~^^^^^^
+  File "C:\PC\mysite\myauth\views.py", line 76, in form_valid
+    response = super().form_valid(form)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 133, in form_valid
+    self.object = form.save()
+                  ~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\auth\forms.py", line 265, in save
+    user = self.set_password_and_save(user, commit=commit)
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\auth\forms.py", line 154, in set_password_and_save
+    user.save()
+    ~~~~~~~~~^^
+  File "C:\PC\.venv\Lib\site-packages\django\contrib\auth\base_user.py", line 65, in save
+    super().save(*args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\base.py", line 902, in save
+    self.save_base(
+    ~~~~~~~~~~~~~~^
+        using=using,
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        update_fields=update_fields,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\base.py", line 1008, in save_base
+    updated = self._save_table(
+        raw,
+    ...<4 lines>...
+        update_fields,
+    )
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\base.py", line 1169, in _save_table
+    results = self._do_insert(
+        cls._base_manager, using, fields, returning_fields, raw
+    )
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\base.py", line 1210, in _do_insert
+    return manager._insert(
+           ~~~~~~~~~~~~~~~^
+        [self],
+        ^^^^^^^
+    ...<3 lines>...
+        raw=raw,
+        ^^^^^^^^
+    )
+    ^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\query.py", line 1868, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\sql\compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 243, in execute
+    return self._record(super().execute, sql, params)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\debug_toolbar\panels\sql\tracking.py", line 164, in _record
+    return method(sql, params)
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sql, params, many=False, executor=self._execute
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 360, in execute
+    return super().execute(query, params)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: UNIQUE constraint failed: auth_user.username
+2026-04-30 16:18:20,349 [ERROR] django.request: Internal Server Error: /ru/myauth/about-me/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 201, in get
+    self.object = self.get_object()
+                  ~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\myauth\views.py", line 47, in get_object
+    return self.request.user.profile if self.request.user.is_authenticated else None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+2026-04-30 16:19:53,492 [WARNING] django.request: Not Found: /myauth/aboutme
+2026-04-30 16:20:22,330 [WARNING] django.request: Not Found: /ru/myauth/aboutme
+2026-04-30 16:20:45,313 [ERROR] django.request: Internal Server Error: /ru/myauth/about-me/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 105, in view
+    return self.dispatch(request, *args, **kwargs)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\base.py", line 144, in dispatch
+    return handler(request, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\views\generic\edit.py", line 201, in get
+    self.object = self.get_object()
+                  ~~~~~~~~~~~~~~~^^
+  File "C:\PC\mysite\myauth\views.py", line 47, in get_object
+    return self.request.user.profile if self.request.user.is_authenticated else None
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\utils\functional.py", line 253, in inner
+    return func(_wrapped, *args)
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 534, in __get__
+    raise self.RelatedObjectDoesNotExist(
+    ...<2 lines>...
+    )
+django.contrib.auth.models.User.profile.RelatedObjectDoesNotExist: User has no profile.
+2026-04-30 16:26:04,879 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\forms.py changed, reloading.
+2026-04-30 16:26:14,601 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 16:33:53,122 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 16:34:11,239 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 16:43:30,859 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 16:43:37,692 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 16:43:45,590 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 16:43:58,121 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 16:44:30,088 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 16:44:41,254 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 16:50:37,664 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 16:50:56,074 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 16:52:40,119 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 16:53:07,183 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 16:56:11,540 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 16:56:25,096 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:10:07,691 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:11:08,973 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:11:10,508 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:11:19,079 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:11:19,813 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:11:50,093 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:11:50,050 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:11:54,792 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:11:54,869 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:13:44,007 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:13:44,158 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:13:51,493 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:13:51,961 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:14:58,808 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:14:58,815 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:15:04,425 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:15:10,809 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:17:31,654 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:17:33,046 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:17:42,607 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:17:42,675 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:20:01,174 [WARNING] django.request: Not Found: /admin/shopapp/products
+2026-04-30 17:24:02,578 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:24:02,743 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:24:10,030 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:24:10,190 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:24:21,167 [WARNING] django.request: Not Found: /
+2026-04-30 17:28:21,268 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:28:21,446 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:28:32,045 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:28:32,077 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:34:39,198 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:34:39,430 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:34:50,043 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:34:50,126 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:43:18,113 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:43:18,629 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:43:28,112 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:43:28,115 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:43:55,102 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:43:55,180 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:44:29,683 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:44:29,698 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:55:14,449 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:55:14,487 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:55:25,655 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:55:25,767 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:57:15,466 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:57:15,652 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-04-30 17:57:18,216 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-04-30 17:57:18,324 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 18:12:27,262 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 19:09:22,709 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 19:09:26,454 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 19:22:41,414 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 19:22:49,562 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 19:24:33,425 [WARNING] django.request: Not Found: /favicon.ico
+2026-05-01 19:28:34,439 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 19:28:36,805 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 19:33:13,389 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+  File "C:\PC\.venv\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\loader_tags.py", line 159, in render
+    return compiled_parent._render(context)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\test\utils.py", line 114, in instrumented_test_render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+  File "C:\PC\.venv\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'import_orders_csv' not found. 'import_orders_csv' is not a valid view function or pattern name.
+2026-05-01 19:36:33,234 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 19:36:35,070 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 19:45:05,896 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 19:45:08,742 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 19:52:22,026 [WARNING] django.request: Not Found: /ru/shopapp/order/
+2026-05-01 19:55:36,556 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\mysite\shopapp\admin.py", line 153, in import_csv
+    Order(**row)
+    ~~~~~^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\base.py", line 545, in __init__
+    _setattr(self, field.name, rel_obj)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 291, in __set__
+    raise ValueError(
+    ...<7 lines>...
+    )
+ValueError: Cannot assign "'KS'": "Order.user" must be a "User" instance.
+2026-05-01 19:56:28,267 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\mysite\shopapp\admin.py", line 153, in import_csv
+    Order(**row)
+    ~~~~~^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\base.py", line 545, in __init__
+    _setattr(self, field.name, rel_obj)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 291, in __set__
+    raise ValueError(
+    ...<7 lines>...
+    )
+ValueError: Cannot assign "'1'": "Order.user" must be a "User" instance.
+2026-05-01 19:57:11,892 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\mysite\shopapp\admin.py", line 153, in import_csv
+    Order(**row)
+    ~~~~~^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\base.py", line 566, in __init__
+    _setattr(self, prop, value)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\fields\related_descriptors.py", line 668, in __set__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Direct assignment to the forward side of a many-to-many set is prohibited. Use products.set() instead.
+2026-05-01 20:03:23,125 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\mysite\shopapp\admin.py", line 153, in import_csv
+    Order(**row)
+    ~~~~~^^^^^^^
+  File "C:\PC\.venv\Lib\site-packages\django\db\models\base.py", line 569, in __init__
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Order() got unexpected keyword arguments: 'product_ids'
+2026-05-01 20:30:02,707 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 20:30:04,916 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 20:33:55,763 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 20:33:58,172 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 20:34:50,870 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 20:34:53,784 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 20:35:23,846 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 20:59:47,475 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 20:59:49,946 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 21:00:06,127 [WARNING] django.request: Not Found: /shopapp/order
+2026-05-01 21:08:05,031 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 21:08:07,410 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 21:12:28,067 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 21:12:31,421 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 21:13:36,274 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 21:13:38,035 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 21:13:41,155 [WARNING] django.request: Not Found: /
+2026-05-01 21:21:29,295 [ERROR] django.request: Internal Server Error: /admin/shopapp/order/import-orders-csv/
+Traceback (most recent call last):
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\PC\.venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\PC\mysite\shopapp\admin.py", line 199, in import_csv
+    product_ids = [int(pid.strip()) for pid in product_ids_str.split(',') if pid.strip()]
+                   ~~~^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '[2]'
+2026-05-01 21:29:16,666 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 21:29:18,220 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 21:33:34,711 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 21:33:38,295 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 21:41:48,784 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 21:41:55,295 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 21:45:03,619 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 21:45:05,605 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-01 21:47:04,251 [INFO] django.utils.autoreload: C:\PC\mysite\shopapp\admin.py changed, reloading.
+2026-05-01 21:47:06,677 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-08 03:47:01,337 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-08 03:47:04,879 [WARNING] django.request: Not Found: /
+2026-05-08 03:47:06,327 [WARNING] django.request: Not Found: /favicon.ico
+2026-05-08 03:48:10,005 [INFO] django.utils.autoreload: C:\Новая папка\mysite\mysite\settings.py changed, reloading.
+2026-05-08 03:48:11,416 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-08 03:48:38,633 [INFO] django.utils.autoreload: C:\Новая папка\mysite\mysite\settings.py changed, reloading.
+2026-05-08 03:48:42,998 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-08 03:49:33,264 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-08 03:49:36,577 [WARNING] django.request: Not Found: /
+2026-05-08 03:50:02,047 [WARNING] django.request: Not Found: /media/products/product_2/preview/00009398_uKtTI86.jpg
+2026-05-08 03:50:09,301 [WARNING] django.request: Not Found: /media/products/product_2/preview/00009398_uKtTI86.jpg
+2026-05-08 03:50:19,511 [WARNING] django.request: Not Found: /media/products/product_2/preview/00009398_uKtTI86.jpg
+2026-05-08 03:51:11,231 [INFO] django.utils.autoreload: C:\Новая папка\mysite\mysite\settings.py changed, reloading.
+2026-05-08 03:51:11,247 [INFO] django.utils.autoreload: C:\Новая папка\mysite\mysite\settings.py changed, reloading.
+2026-05-08 03:51:13,250 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-08 03:51:13,250 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-08 03:52:25,387 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-08 03:52:46,808 [INFO] django.utils.autoreload: C:\Новая папка\mysite\mysite\sitemaps.py changed, reloading.
+2026-05-08 03:52:49,631 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-08 03:53:45,065 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2026-05-08 03:53:51,489 [WARNING] django.request: Not Found: /
