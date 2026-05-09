@@ -43,8 +43,9 @@ DEBUG_TOOLBAR_CONFIG = {
 }
 
 ALLOWED_HOSTS = [
-    "0.0.0.0",
     '127.0.0.1',
+    'localhost',
+    'sergeykolesenkov-kss-a865.twc1.net',
 ] + getenv('DJANGO_ALLOWED_HOSTS', '').split(',')
 INTERNAL_IPS = [
     "127.0.0.1",
@@ -172,6 +173,9 @@ LANGUAGES = [
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'uploads'
