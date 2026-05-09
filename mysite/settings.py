@@ -190,9 +190,11 @@ CSRF_COOKIE_HTTPONLY = False
 CSRF_COOKIE_SAMESITE = 'Lax'
 
 CSRF_TRUSTED_ORIGINS = [
-    'sergeykolesenkov-kss-a865.twc1.net',
-    'localhost',
-    '127.0.0.1',
+    'http://localhost',
+    'http://localhost:8000',
+    'http://127.0.0.1',
+    'http://127.0.0.1:8000',
+    'https://sergeykolesenkov-kss-a865.twc1.net',
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
