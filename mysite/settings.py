@@ -43,6 +43,7 @@ DEBUG_TOOLBAR_CONFIG = {
 }
 
 ALLOWED_HOSTS = [
+    '172.18.0.6',
     '127.0.0.1',
     'localhost',
     'sergeykolesenkov-kss-a865.twc1.net',
