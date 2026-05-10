@@ -16,14 +16,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from  django.conf import settings
+from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls.i18n import i18n_patterns
 from drf_spectacular.views import SpectacularAPIView, SpectacularRedocView, SpectacularSwaggerView
 from debug_toolbar.toolbar import debug_toolbar_urls
 from django.contrib.sitemaps.views import sitemap
 from .sitemaps import sitemaps
+from shopapp.views import home
+
 urlpatterns = [
+    path('',home, name='home'),
     path('admin/doc/', include('django.contrib.admindocs.urls')),
     path('admin/', admin.site.urls),
     path('req/', include('requestdataapp.urls')),
@@ -38,23 +41,18 @@ urlpatterns = [
         sitemap,
         {'sitemaps': sitemaps},
         name='django.contrib.sitemaps.view.sitemap',
-    )
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    ),
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    urlpatterns += debug_toolbar_urls()
+
 
 urlpatterns += i18n_patterns(
     path('myauth/', include('myauth.urls')),
     path('shop/', include('shopapp.urls')),
 )
 
-if settings.DEBUG:
-    urlpatterns.extend(
-        static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    )
 
-    urlpatterns.extend(
-        static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
-    )
-
-    urlpatterns.append(
-        path('__debug__/', include('debug_toolbar.urls')),
-    )

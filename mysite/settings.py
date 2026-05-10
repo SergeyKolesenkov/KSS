@@ -27,15 +27,13 @@ DATABASE_DIR.mkdir(exist_ok=True)
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
-# SECURITY WARNING: ')
-SECRET_KEY = getenv(
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = os.getenv(
     'DJANGO_SECRET_KEY',
     'django-insecure-b$t9t@z95^do915g__=qh_n=)v9(1he)=ly8q-anlpb03#890a'
 )
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = getenv('DJANGO_DEBUG', '0') == '1'
-
 
 
 DEBUG_TOOLBAR_CONFIG = {
@@ -48,6 +46,7 @@ ALLOWED_HOSTS = [
     'localhost',
     'sergeykolesenkov-kss-a865.twc1.net',
 ] + getenv('DJANGO_ALLOWED_HOSTS', '').split(',')
+
 INTERNAL_IPS = [
     "127.0.0.1",
     "0.0.0.0",
@@ -101,7 +100,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -172,30 +171,17 @@ LANGUAGES = [
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
-
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
-]
+    ]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'uploads'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
-
-CSRF_COOKIE_SECURE = False
-CSRF_COOKIE_HTTPONLY = False
-CSRF_COOKIE_SAMESITE = 'Lax'
-
-CSRF_TRUSTED_ORIGINS = [
-    'http://localhost',
-    'http://localhost:8000',
-    'http://127.0.0.1',
-    'http://127.0.0.1:8000',
-    'https://sergeykolesenkov-kss-a865.twc1.net',
-]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
@@ -248,33 +234,3 @@ logging.config.dictConfig({
 })
 
 
-# LOGFILE_NAME = BASE_DIR / 'log.txt'
-# LOGFILE_SIZE = 1024 * 1024
-# LOGFILE_COUNT = 3
-#
-# LOGGING = {
-#     'version': 1,
-#     'disable_existing_loggers': False,
-#     'formatters': {
-#         'verbose': {
-#             'format': '%(asctime)s [%(levelname)s] %(name)s: %(message)s',
-#         },
-#     },
-#     'handlers': {
-#         'console': {
-#             'class': 'logging.StreamHandler',
-#             'formatter': 'verbose',
-#         },
-#         'logfile': {
-#             'class': 'logging.handlers.RotatingFileHandler',
-#             'filename': LOGFILE_NAME,
-#             'maxBytes': LOGFILE_SIZE,
-#             'backupCount': LOGFILE_COUNT,
-#             'formatter': 'verbose',
-#         },
-#     },
-#     'root': {
-#         'handlers': ['console', 'logfile'],
-#         'level': 'INFO',
-#     },
-# }

@@ -24,6 +24,9 @@ from django.contrib.auth.mixins import (PermissionRequiredMixin,
                                         UserPassesTestMixin, LoginRequiredMixin, )
 from .serializers import ProductsSerializer, OrdersSerializer
 
+def home(request):
+    return render(request, 'home.html')
+
 log = logging.getLogger(__name__)
 
 
