@@ -58,6 +58,8 @@ CSRF_TRUSTED_ORIGINS = [
     'https://127.0.0.1',
     'https://sergeykolesenkov-kss-a865.twc1.net',
     'http://sergeykolesenkov-kss-a865.twc1.net',
+    'https://sergeykolesenkov-kss-a865.twc1.net:8000',
+    'http://sergeykolesenkov-kss-a865.twc1.net:8000',
 ]
 
 if DEBUG:
