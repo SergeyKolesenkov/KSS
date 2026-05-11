@@ -2,12 +2,17 @@ services:
   app:
     build:
       dockerfile: Dockerfile
-    command: gunicorn mysite.wsgi:application --bind 0.0.0.0:8000
+    command: >
+      gunicorn --bind 0.0.0.0:8000
+      --workers 2
+      --timeout 120
+      --worker-class sync
+      mysite.wsgi:application
     ports:
       - '8000:8000'
     restart: always
     env_file:
-      - ../.env
+      - .env
     logging:
       driver: 'json-file'
       options:

@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 import os
 from pathlib import Path
+
+# from django.conf.urls.static import static
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _t_
 from drf_spectacular.settings import SPECTACULAR_DEFAULTS
@@ -186,7 +188,7 @@ LANGUAGES = [
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'mysite/static'),)
+STATICFILES_DIRS = [BASE_DIR / 'static',]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'uploads'
