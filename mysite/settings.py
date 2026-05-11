@@ -35,7 +35,7 @@ SECRET_KEY = os.getenv(
     'django-insecure-b$t9t@z95^do915g__=qh_n=)v9(1he)=ly8q-anlpb03#890a'
 )
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = getenv('DJANGO_DEBUG', '0') == '1'
+DEBUG = True # getenv('DJANGO_DEBUG', '0') == '1'
 
 DEBUG_TOOLBAR_CONFIG = {
     'SHOW_TOOLBAR_CALLBACK': lambda request: DEBUG,
