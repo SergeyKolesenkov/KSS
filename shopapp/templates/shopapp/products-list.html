@@ -32,6 +32,11 @@
             <a href="{% url 'shopapp:product_create' %}"
             >{% translate 'Create a new product' %}</a>
         </div>
+        <div>
+            <a href="/">На главную</a>
+        </div>
+
+
     {% else %}
         {% url 'shopapp:product_create' as create_product_url %}
         {% blocktranslate %}

@@ -36,8 +36,6 @@
     {% else %}
         <h3>{% translate 'No order yet' %}</h3>
     {% endif %}
-    <div>
-        <a href='{% url "shopapp:order_create" %}'>
-            {% translate 'Create a new order' %}
-    </div>
+    <div><a href='{% url "shopapp:order_create" %}'>Create a new order</a></div>
+    <div><a href="/">На главную</a></div>
 {% endblock %}

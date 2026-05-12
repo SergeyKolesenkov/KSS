@@ -46,7 +46,7 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '0.0.0.0',
-    'sergeykolesenkov-kss-a865.twc1.net',
+    'kolesenkov.ru',
 ] + getenv('DJANGO_ALLOWED_HOSTS', '').split(',')
 
 INTERNAL_IPS = [
@@ -63,6 +63,10 @@ CSRF_TRUSTED_ORIGINS = [
     'http://sergeykolesenkov-kss-a865.twc1.net',
     'https://sergeykolesenkov-kss-a865.twc1.net:8000',
     'http://sergeykolesenkov-kss-a865.twc1.net:8000',
+    'https://kolesenkov.ru',
+    'http://kolesenkov.ru',
+    'https://kolesenkov.ru:8000',
+    'http://kolesenkov.ru:8000',
 ]
 
 if DEBUG:

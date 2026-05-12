@@ -23,7 +23,15 @@
         Time_running: {{ time_running }}
     </div>
     <div>
+        <a href="{% url 'shopapp:products_list' %}">Список продуктов</a>
+    </div>
+    <div>
+        <a href="{% url 'shopapp:order_list' %}">Список заказов</a>
+    </div>
+    <div>
         {% lorem 3 p random %}
     </div>
-    <div><a href="/">На главную</a></div>
+    <div>
+        <a href="/">На главную</a>
+    </div>
 {% endblock %}
